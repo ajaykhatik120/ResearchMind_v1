@@ -1,0 +1,51 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Chroma database
+chroma_db/
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+
+# Uploaded and processed data
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Model cache
+.cache/
+models/
+*.pt
+*.pth
+*.onnx
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# AWS credentials and private keys
+.aws/
+*.pem
+*.key
